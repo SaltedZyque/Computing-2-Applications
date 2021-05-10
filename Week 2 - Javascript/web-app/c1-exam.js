@@ -15,7 +15,9 @@ const Exam = Object.create(null);
 //      an input list of [1,2,3,4,5,6,7,8]
 //      returns [1,4,7]
 
-trying to create a conflict here
+Exam.every_third = function (array) {
+    return array.filter((ignore, k) => k % 3 === 0);
+};
 
 // Exam.every_third = function (input_array) {
 
