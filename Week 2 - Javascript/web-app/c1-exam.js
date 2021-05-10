@@ -14,8 +14,21 @@ const Exam = Object.create(null);
 //    for example:
 //      an input list of [1,2,3,4,5,6,7,8]
 //      returns [1,4,7]
-Exam.every_third = function () {
-    return;
+Exam.every_third = function (input_array) {
+
+    // Create an empty output array.
+    let thirds_array = [];
+
+    // Iterator variable starts at second item of list.
+    let i = 0;
+
+    //Iterate through list
+    while (i < input_array.length) {
+        thirds_array.push(input_array[i]);
+        i += 3;
+    }
+
+    return thirds_array;
 };
 
 
