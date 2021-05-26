@@ -11,7 +11,7 @@ const curry = function (f) {
     };
 };
 
-const curry = (f) => (first) => (second) => f(first, second);
+// const curry = (f) => (first) => (second) => f(first, second);
 
 // curry(add) // add_n
 // curry(add)(3) // add_3
